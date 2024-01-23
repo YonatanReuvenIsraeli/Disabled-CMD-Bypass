@@ -5,7 +5,7 @@ goto :Disclaimer
 
 :Disclaimer
 echo.
-set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
+set /p "Disclaimer"="Do you agree to the Disclaimer? (Yes/No) "
 if /i "%Disclaimer%"=="Yes" goto :Start
 if /i "%Disclaimer%"=="No" goto :Exit
 echo Invalid Syntax!
@@ -17,7 +17,7 @@ goto :CMD
 
 :CMD
 set Prompt="%cd%>"
-set /p Command=%Prompt%
+set /p "Command"=%Prompt%
 if /i "%Command%"=="exit" goto :Exit
 %Command%
 goto :CMD
