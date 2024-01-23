@@ -17,7 +17,7 @@ goto :CMD
 
 :CMD
 set Prompt="%cd%>"
-set /p "Command=%Prompt%"
+set /p Command="%Prompt%"
 if /i "%Command%"=="exit" goto :Exit
 %Command%
 goto :CMD
