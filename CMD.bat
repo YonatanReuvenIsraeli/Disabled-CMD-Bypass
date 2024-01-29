@@ -14,7 +14,7 @@ goto :Disclaimer
 
 :Start
 cls
-goto :CMD
+goto :CMD1
 
 :CMD1
 set Prompt="%cd%>"
