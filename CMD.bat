@@ -19,7 +19,7 @@ goto :CMD1
 :CMD1
 set Prompt="%cd%>"
 set /p Command=%Prompt%
-if /i "%Command%"=="cls" goto :CMD1
+if /i "%Command%"=="cls" goto :cls
 if /i "%Command%"=="exit" goto :Exit
 %Command%
 goto :CMD2
@@ -28,10 +28,14 @@ goto :CMD2
 set Prompt="%cd%>"
 echo.
 set /p Command=%Prompt%
-if /i "%Command%"=="cls" goto :CMD1
+if /i "%Command%"=="cls" goto :cls
 if /i "%Command%"=="exit" goto :Exit
 %Command%
 goto :CMD2
+
+:cls
+cls
+goto CMD1
 
 :Exit
 endlocal
