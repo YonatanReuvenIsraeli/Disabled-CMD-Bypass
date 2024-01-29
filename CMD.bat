@@ -16,12 +16,20 @@ goto :Disclaimer
 cls
 goto :CMD
 
-:CMD
+:CMD1
 set Prompt="%cd%>"
 set /p Command=%Prompt%
 if /i "%Command%"=="exit" goto :Exit
 %Command%
-goto :CMD
+goto :CMD2
+
+:CMD2
+set Prompt="%cd%>"
+echo.
+set /p Command=%Prompt%
+if /i "%Command%"=="exit" goto :Exit
+%Command%
+goto :CMD2
 
 :Exit
 endlocal
