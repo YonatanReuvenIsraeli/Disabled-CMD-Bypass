@@ -27,7 +27,7 @@ goto :CMD
 
 :cls
 cls
-goto CMD
+goto :CMD
 
 :Exit
 endlocal
