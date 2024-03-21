@@ -6,6 +6,7 @@ goto Disclaimer
 
 :Disclaimer
 echo.
+set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
 if /i "%Disclaimer%"=="Yes" goto Start
 if /i "%Disclaimer%"=="No" goto Exit
@@ -18,6 +19,7 @@ goto CMD
 
 :CMD
 set Prompt="%cd%>"
+set Command=
 set /p Command=%Prompt%
 if /i "%Command%"=="cls" goto cls
 if /i "%Command%"=="exit" goto Exit
