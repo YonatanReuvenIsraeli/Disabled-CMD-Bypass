@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title CMD.bat
-echo CMD.bat v1.0.0
+echo CMD.bat v1.0.1
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 goto Disclaimer
@@ -20,7 +20,7 @@ cls
 goto CMD
 
 :CMD
-set Prompt="%cd%>"
+set Prompt="%cd%">
 set Command=
 set /p Command=%Prompt%
 if /i "%Command%"=="cls" goto cls
