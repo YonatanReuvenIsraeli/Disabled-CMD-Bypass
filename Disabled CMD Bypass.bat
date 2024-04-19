@@ -2,15 +2,15 @@
 setlocal
 title Disabled CMD Bypass
 echo Program Name: Disabled CMD Bypass
-echo Version: 2.1.0
+echo Version: 2.1.1
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
+
+:Disclaimer
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 goto Disclaimer
-
-:Disclaimer
 echo.
 set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
