@@ -2,7 +2,7 @@
 setlocal
 title Disabled CMD Bypass
 echo Program Name: Disabled CMD Bypass
-echo Version: 2.1.2
+echo Version: 2.1.3
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -15,7 +15,7 @@ set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
 if /i "%Disclaimer%"=="Yes" goto Start
 if /i "%Disclaimer%"=="No" goto Exit
-echo Invalid Syntax!
+echo Invalid syntax!
 goto Disclaimer
 
 :Start
