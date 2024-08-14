@@ -2,40 +2,41 @@
 setlocal
 title Disabled CMD Bypass
 echo Program Name: Disabled CMD Bypass
-echo Version: 2.1.3
+echo Version: 2.1.4
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
+goto "Disclaimer"
 
-:Disclaimer
+:"Disclaimer"
 echo.
 echo READ DISCLAIMER ^-^-^> THIS IS FOR EDUCATIONAL PURPOSES ONLY! DO NOT USE THIS ON SOMEONE ELSES PC WITHOUT THEIR EXPLICIT PERMISSION! THIS IS A HACK! CONTINUE AT YOUR OWN RISK! WE HOLD NO RESPONSIBILITY FOR ANYTHING THAT HAPPEND, IS HAPPENING, AND/OR WILL HAPPEN BECAUSE OF THIS BATCH FILE!
 echo.
 set Disclaimer=
 set /p Disclaimer="Do you agree to the Disclaimer? (Yes/No) "
-if /i "%Disclaimer%"=="Yes" goto Start
-if /i "%Disclaimer%"=="No" goto Exit
+if /i "%Disclaimer%"=="Yes" goto "Start"
+if /i "%Disclaimer%"=="No" goto "Exit"
 echo Invalid syntax!
-goto Disclaimer
+goto "Disclaimer"
 
-:Start
+:"Start"
 cls
-goto CMD
+goto "CMD"
 
-:CMD
+:"CMD"
 set PromptText="%cd%>"
 set Command=
 set /p Command=%PromptText%
-if /i "%Command%"=="cls" goto cls
-if /i "%Command%"=="exit" goto Exit
+if /i "%Command%"=="cls" goto "cls"
+if /i "%Command%"=="exit" goto "Exit"
 %Command%
 echo.
-goto CMD
+goto "CMD"
 
-:cls
+:"cls"
 cls
-goto CMD
+goto "CMD"
 
-:Exit
+:"Exit"
 endlocal
 exit
