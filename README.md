@@ -1,4 +1,4 @@
-# Disabled CMD Bypass v2.1.7
+# Disabled CMD Bypass v2.1.8
 
 ## This batch file, named "Disabled CMD Bypass.bat", is designed for educational purposes only to demonstrate potential vulnerabilities in Windows operating systems. It should only be used in controlled testing environments with explicit authorization.
 Bypasses "The command prompt has been disabled by your administrator".
