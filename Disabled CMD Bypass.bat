@@ -1,8 +1,8 @@
 @echo off
-setlocal
 title Disabled CMD Bypass
+setlocal
 echo Program Name: Disabled CMD Bypass
-echo Version: 2.1.9
+echo Version: 2.1.10
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
